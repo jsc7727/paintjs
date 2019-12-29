@@ -15,10 +15,16 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0, 0, 0, 0.8);
 }
+.controls{
+    margin-top:80px;
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+}
 
 .controls .controls__colors{
-    display: flex ;
-    margin-top: 10px;
+    margin:10px;
+    display:flex;
 }
 
 .controls__colors .controls__color{
@@ -27,11 +33,20 @@ body {
     box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0, 0, 0, 0.8);
     border-radius: 100%;
     cursor: pointer;
+    
 }
-.controls__colors .controls__btns .controls__btn{
-    width: 50px;
-    height: 50px;
-    margin-right :5px;
+
+.controls__btns{
+    align-items: center;
+}
+
+ .controls__btns .controls__btn{
+    all: unset;
+    cursor:pointer;
+    background-color: white;
+    padding: 5px 20px;
+    width: 80px;
+    text-align: center;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0, 0, 0, 0.8);
-    border-radius: 100%;
 }
