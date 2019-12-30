@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items:center;
-    padding-top:50px;
+    padding:50px 0;
 }
 .canvas{
     width:700px;
@@ -17,13 +17,32 @@ body {
 }
 .controls{
     margin-top:80px;
-    flex-direction: column;
+    flex-direction:column;
     display:flex;
     align-items: center;
 }
 
+.controls__btns button{
+    all: unset; /*버튼 클릭시 반응 비활성화*/
+    cursor: pointer;
+    background-color: white;
+    padding:5px 0px;
+    width: 80px;
+    text-align: center; /*텍스트 가운데로 모으기 */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 12px;
+}
+.controls__btns button:active{
+    transform: scale(0.98);
+}
+
 .controls .controls__colors{
-    margin:10px;
+    margin-top:30px;
     display:flex;
 }
 
@@ -40,13 +59,7 @@ body {
     align-items: center;
 }
 
- .controls__btns .controls__btn{
-    all: unset;
-    cursor:pointer;
-    background-color: white;
-    padding: 5px 20px;
-    width: 80px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0, 0, 0, 0.8);
+.controls__range{
+    margin-bottom:30px;
+
 }
